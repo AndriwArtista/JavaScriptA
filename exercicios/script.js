@@ -98,3 +98,50 @@ function converterTemperatura(){
         document.getElementById("resultado10").innerText = "a temperatura em fahrenheits é " + f;
     
 }
+// exercicio 11
+function verificarDia() {
+    let dia = Number(document.getElementById("diaSemana").value);
+    let resultado = "";
+
+    if (dia == 1) {
+        resultado = "Domingo";
+    } else if (dia == 2) {
+        resultado = "Segunda-feira";
+    } else if (dia == 3) {
+        resultado = "Terça-feira";
+    } else if (dia == 4) {
+        resultado = "Quarta-feira";
+    } else if (dia == 5) {
+        resultado = "Quinta-feira";
+    } else if (dia == 6) {
+        resultado = "Sexta-feira";
+    } else if (dia == 7) {
+        resultado = "Sábado";
+    } else {
+        resultado = "Número inválido. Digite um número de 1 a 7.";
+    }
+
+    document.getElementById("resultado11").innerText = resultado;
+}
+
+// exercicio 12
+function verificarSenha() {
+    let senha = document.getElementById("senha").value;
+
+    if (senha == "1234") {
+        document.getElementById("resultado12").innerText = "Acesso permitido!";
+    } else {
+        document.getElementById("resultado12").innerText = "Senha incorreta.";
+    }
+}
+
+// exercicio 13
+function contagemRegressiva() {
+    let texto = "";
+
+    for (let i = 10; i >= 1; i--) {
+        texto += i + " ";
+    }
+
+    document.getElementById("resultado13").innerText = texto;
+}
